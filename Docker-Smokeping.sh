@@ -2,7 +2,7 @@
 
 target() {
   rand=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 5 | head -n 1)
-  read -p "What host/IPi do you want to ping?: " target1
+  read -p "What host/IP do you want to ping?: " target1
   echo "You want toi ping: $target1"
   echo >> $PWD/config.d/Targets
   echo -e "++ $rand" >> $PWD/config.d/Targets
