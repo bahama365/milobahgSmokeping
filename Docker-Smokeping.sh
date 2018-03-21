@@ -25,12 +25,12 @@ target
     target
   done
 echo 
-echo "Updating $PWD/milobahgSmokeping/config.d/Targets..."
+echo "Updating $PWD/config.d/Targets..."
 sleep 1
 echo "...done!"
 sleep 1
 echo "Building image..."
-docker build -t smokeping $PWD/milobahgSmokeping
+docker build -t smokeping .
 echo 
 sleep 1
 read -p "Image built, what do you want to call the container?: " containerName
